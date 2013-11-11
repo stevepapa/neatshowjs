@@ -1,0 +1,35 @@
+{
+    "name": "neatshowjs",
+    "title": "neatShow.js",
+    "description": "A jQuery plugin to fade in images beautifully on your website",
+    "keywords": [
+        "show",
+        "fadein",
+        "images"
+    ],
+    "version": "1.2.0",
+    "author": {
+        "name": "Steve Papadopoulos",
+        "url": "https://github.com/stevepapa"
+    },
+    "maintainers": [
+        {
+            "name": "Steve Papadopoulos",
+            "email": "sp@stevepapa.com",
+            "url": "http://stevepapa.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/stevepapa/neatshowjs/blob/master/LICENSE"
+        }
+    ],
+    "bugs": "https://github.com/stevepapa/neatshowjs",
+    "homepage": "https://github.com/stevepapa/neatshowjs",
+    "docs": "https://github.com/stevepapa/neatshowjs",
+    "download": "https://github.com/stevepapa/neatshowjs",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
