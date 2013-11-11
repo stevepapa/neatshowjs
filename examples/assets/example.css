@@ -1,0 +1,27 @@
+body {
+	margin: 50px;
+}
+
+h1 {
+	margin:48px 10px;
+	font-family: Arial,Tahoma, Verdana;
+	color: #333;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+div { 
+	display: block;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid silver;
+	float: left;
+}
+
+div img {
+	width: 200px;
+	height: 200px;
+	display: none;
+}
