@@ -3,9 +3,9 @@ neatShow.js
 
 A jQuery plugin to fade in images beautifully on your website
 
-###[Demo 1 (default)](http://stevepapa.com/neatshowjs/examples/ "Demo 1 (default)")
+###<a href="http://stevepapa.com/neatshowjs/examples/" target="_blank">Demo 1 (default)
 
-###[Demo 2 (random)](http://stevepapa.com/neatshowjs/examples/random.html "Demo 2 (random)")
+###<a href="http://stevepapa.com/neatshowjs/examples/random.html" target="_blank">Demo 2 (random)</a>
 
 
 
