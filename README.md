@@ -1,7 +1,9 @@
 neatShow.js
 ===========
 
-A jQuery plugin to fade in images beautifully on your website
+A jQuery plugin to fade in images beautifully on your website.
+
+When neatShow is applied to an image, it will wait until the image has finished downloading, then instantly fades it in regardless of other images or activity on the page. Works reliably with all images regardless of their state, including new and cached.
 
 ###<a href="http://stevepapa.com/neatshowjs/examples/" target="_blank">Demo 1 (default)
 
