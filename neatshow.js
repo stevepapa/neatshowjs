@@ -9,26 +9,26 @@
 (function( $ ) {
 
     jQuery.fn.neatShow = function (option) {
-
         var selection = this;
-        var minSpeed = 400;
-        var maxSpeed = 1800;
+        var settings = $.extend({
+            minSpeed: 400,
+            maxSpeed: 1800,
+            speed: null,
+            mode: null
+        }, option);
 
-        if (typeof option === 'undefined')  option = {};
-        option.speed = option.speed || null;
-        option.mode = option.mode || null;
-        option.minSpeed = option.minSpeed || minSpeed;
-        option.maxSpeed = option.maxSpeed || maxSpeed;
-
-        if (option.mode == 'container')  selection = this.find('img:not(:visible)');
+        if (settings.mode === 'container') {
+            selection = this.find('img:not(:visible)');
+        }
 
         var neat = function(){
+            var speed = settings.speed;
 
-            option.speed = 'random' ?
-                this.speed = Math.floor(Math.random()*(option.maxSpeed-option.minSpeed+1)+option.minSpeed) :
-                this.speed = option.speed ;
+            if (speed === 'random') {
+                speed = Math.floor(Math.random() * (settings.maxSpeed - settings.minSpeed + 1) + settings.minSpeed);
+            }
 
-            $(this).fadeIn(this.speed);
+            $(this).fadeIn(speed);
         };
 
         return selection.each(function () {
