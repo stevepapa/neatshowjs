@@ -12,7 +12,7 @@
         var settings = $.extend({
             minSpeed: 400,
             maxSpeed: 1800,
-            speed: null,
+            speed: 400,
             mode: null
         }, option);
 
