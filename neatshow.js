@@ -7,8 +7,7 @@
  */
 
 (function( $ ) {
-
-    jQuery.fn.neatShow = function (option) {
+    $.fn.neatShow = function (option) {
         var selection = this;
         var settings = $.extend({
             minSpeed: 400,
@@ -21,7 +20,7 @@
             selection = this.find('img:not(:visible)');
         }
 
-        var neat = function(){
+        var neat = function () {
             var speed = settings.speed;
 
             if (speed === 'random') {
@@ -31,13 +30,15 @@
             $(this).fadeIn(speed);
         };
 
-        return selection.each(function () {
-            if (this.complete || this.readyState == 'complete') {
+        selection.each(function () {
+            if (this.complete || this.readyState === 'complete') {
                 neat.call(this);
             } else {
                 $(this).load(neat);
             }
         });
+
+        return this;
     };
 
 }( jQuery ));
