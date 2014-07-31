@@ -1,0 +1,15 @@
+{
+	"name":	"neatshowjs",
+	"version": "1.2.3",
+	"main":	"neatshow.min.js",
+	"ignore": [
+		"README.md",
+		"bower.json",
+		"package.json",
+		"examples"
+	],
+	"dependencies": {
+		"jquery": ">=1.10.2"
+	}
+
+}
